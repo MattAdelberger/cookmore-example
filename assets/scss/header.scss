@@ -1,0 +1,17 @@
+header {
+    background: $medium-tan;
+    text-transform: UPPERCASE;
+    line-height: 1.6em;
+    a {
+    color: $dark-tan;
+        font-size: 1.6em;
+    }
+    a:hover {
+        color: $orange;
+    }
+    ul li {
+        float:left;
+        width: 20%;
+        padding: 1.8em 0;
+    }
+}

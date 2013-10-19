@@ -1,0 +1,30 @@
+
+
+body {
+    background: $light-tan;
+    font-family:"Tw Cen MT Kenmore Bold", "Tw Cen MT", "Helvetica Neue", helvetica, arial;
+    font-size: 62.5%;
+}
+
+.inner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.group:before,
+.group:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.group:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.group {
+    *zoom: 1;
+}

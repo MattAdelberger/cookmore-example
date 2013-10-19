@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+p, ul {
+  font-size: 1.3em; }
+
+h1 {
+  font-size: 8em; }
+
+h2 {
+  text-align: center;
+  padding: 1em 0;
+  font-size: 3.8em; }
+
+h3 {
+  font-size: 3.5em; }
+
+h4 {
+  font-size: 2.2em;
+  padding: 0.8em 0; }
+
+h5 {
+  color: #e9633a;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 1em 0 0.5em 0; }
+
+body {
+  background: #f7f6f1;
+  font-family: "Tw Cen MT Kenmore Bold", "Tw Cen MT", "Helvetica Neue", helvetica, arial;
+  font-size: 62.5%; }
+
+.inner {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.group:before,
+.group:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.group:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.group {
+  *zoom: 1; }
+
+header {
+  background: #f1ede3;
+  text-transform: UPPERCASE;
+  line-height: 1.6em; }
+  header a {
+    color: #7c7b78;
+    font-size: 1.6em; }
+  header a:hover {
+    color: #e9633a; }
+  header ul li {
+    float: left;
+    width: 20%;
+    padding: 1.8em 0; }
+
+.hero {
+  background: URL("../img/hero-bg.jpg") no-repeat;
+  background-position: 50% 60%;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
+  .hero .hero-left {
+    width: 25%;
+    float: left; }
+  .hero .hero-right {
+    padding-top: 5em;
+    width: 75%;
+    float: left; }
+    .hero .hero-right img {
+      width: 100%;
+      height: auto !important;
+      animation: water 20s linear infinite;
+      -webkit-animation: water 20s linear infinite;
+      /* Safari and Chrome */ }
+    .hero .hero-right h3 {
+      text-align: center;
+      margin-bottom: 30px; }
+
+@-webkit-keyframes water {
+  0% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari and Chrome */ }
+
+  50% {
+    transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    /* IE 9 */
+    -webkit-transform: rotate(5deg);
+    /* Safari and Chrome */ }
+
+  100% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari and Chrome */ } }
+
+@keyframes water {
+  0% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari and Chrome */ }
+
+  50% {
+    transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    /* IE 9 */
+    -webkit-transform: rotate(5deg);
+    /* Safari and Chrome */ }
+
+  100% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari and Chrome */ } }
+
+.blue-bar {
+  background: #0a2852;
+  color: white; }
+  .blue-bar ul {
+    width: 100%; }
+  .blue-bar ul strong {
+    display: block;
+    font-weight: bold; }
+  .blue-bar ul li {
+    float: left;
+    width: 10%;
+    padding: 1em 5%; }
+  .blue-bar ul li.middle {
+    width: 20%; }
+  .blue-bar ul li:first-child {
+    padding-left: 0; }
+  .blue-bar ul li:last-child {
+    padding-right: 0; }
+
+.heroes-at-home {
+  background: #e9633a;
+  text-align: center;
+  color: white; }
+  .heroes-at-home .text-style-1 {
+    font-size: 0.8em; }
+  .heroes-at-home .text-style-2 {
+    font-style: italic; }
+
+.submit-recipes {
+  padding: 2em 0; }
+  .submit-recipes ul {
+    padding: 1em 0; }
+  .submit-recipes .recipe {
+    background: white;
+    margin-right: 2%;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    width: 23%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 0.5em; }
+    .submit-recipes .recipe img {
+      width: 100%;
+      height: auto !important; }
+    .submit-recipes .recipe:last-child {
+      margin-right: 0; }
+
+.prizes {
+  padding: 2em 0;
+  background: white; }
+  .prizes ul {
+    padding: 1em 0; }
+  .prizes .prize {
+    background: white;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    width: 33%;
+    float: left;
+    padding: 0.5em; }
+    .prizes .prize img {
+      width: 100%;
+      height: auto !important; }
+    .prizes .prize:last-child {
+      margin-right: 0; }
+
+.enter-now {
+  text-align: center;
+  padding: 2em 0;
+  margin-bottom: 200px; }
