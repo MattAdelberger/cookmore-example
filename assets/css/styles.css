@@ -1,3 +1,8 @@
+/*********************************
+*
+*  Reset Styles
+*
+*********************************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -45,6 +50,48 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*********************************
+*
+*  Variables
+*
+*********************************/
+/*********************************
+*
+*  General CSS
+*
+*********************************/
+body {
+  background: #f7f6f1;
+  font-family: "Tw Cen MT Kenmore Bold", "Tw Cen MT", "Helvetica Neue", helvetica, arial;
+  font-size: 62.5%;
+  color: black; }
+
+.inner {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.group:before,
+.group:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.group:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.group {
+  *zoom: 1; }
+
+/*********************************
+*
+*  Typography
+*
+*********************************/
 a {
   text-decoration: none; }
 
@@ -72,32 +119,11 @@ h5 {
   font-weight: bold;
   padding: 1em 0 0.5em 0; }
 
-body {
-  background: #f7f6f1;
-  font-family: "Tw Cen MT Kenmore Bold", "Tw Cen MT", "Helvetica Neue", helvetica, arial;
-  font-size: 62.5%; }
-
-.inner {
-  max-width: 1140px;
-  margin: 0 auto; }
-
-.group:before,
-.group:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-.group:after {
-  clear: both; }
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.group {
-  *zoom: 1; }
-
+/*********************************
+*
+*  Header Styles
+*
+*********************************/
 header {
   background: #f1ede3;
   text-transform: UPPERCASE;
@@ -112,6 +138,11 @@ header {
     width: 20%;
     padding: 1.8em 0; }
 
+/*********************************
+*
+*  Section Styles
+*
+*********************************/
 .hero {
   background: URL("../img/hero-bg.jpg") no-repeat;
   background-position: 50% 60%;
@@ -224,7 +255,7 @@ header {
     box-sizing: border-box;
     width: 23%;
     float: left;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     padding: 0.5em; }
     .submit-recipes .recipe img {
       width: 100%;
@@ -255,5 +286,40 @@ header {
 
 .enter-now {
   text-align: center;
-  padding: 2em 0;
+  padding: 4em 0;
   margin-bottom: 200px; }
+  .enter-now button {
+    color: white;
+    background: #e9633a;
+    box-shadow: 1px 2px 1px #7c7b78;
+    border: none;
+    font-size: 1.6em;
+    cursor: pointer;
+    padding: 0.5em 2em;
+    border-radius: 15px; }
+
+/*********************************
+*
+*  Media Queries
+*
+*********************************/
+@media (max-width: 400px) {
+  h2 {
+    font-size: 2.8em; }
+
+  header .desktop {
+    display: none; }
+
+  .hero .hero-right img {
+    display: none; }
+
+  .submit-recipes ul {
+    padding: 0; }
+  .submit-recipes .recipe {
+    width: 96%;
+    margin: 2%; }
+
+  .enter-now button {
+    width: 95%;
+    border-radius: 5px;
+    padding: 1em 2em; } }

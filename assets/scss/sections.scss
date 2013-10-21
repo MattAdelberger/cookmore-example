@@ -108,7 +108,7 @@
 	   box-sizing: border-box;  
         width: 23%;
         float: left;
-        border: 1px solid #ccc;
+        border: 1px solid $light-gray;
         padding: 0.5em;
         img {
             width: 100%;
@@ -146,6 +146,16 @@
 
 .enter-now {
     text-align:center;
-    padding: 2em 0;
+    padding: 4em 0;
     margin-bottom: 200px;
+    button {
+        color: $white;
+        background: $orange;
+        box-shadow: 1px 2px 1px $gray;
+        border: none;
+        font-size: 1.6em;
+        cursor: pointer;
+        padding: 0.5em 2em;
+        border-radius: 15px;
+    }
 }
