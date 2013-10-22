@@ -380,13 +380,16 @@ header .mobile {
   h1:before {
     width: 40px;
     height: 100px;
-    background: url("../img/sprite.png") -100px -40px no-repeat; }
+    background: url("../img/sprite.png") -100px -37px no-repeat; }
 
   h2 {
     font-size: 2.8em; }
 
   h3 {
     font-size: 1.8em; }
+
+  h4 {
+    font-size: 1.5em; }
 
   header .desktop {
     display: none; }
@@ -395,24 +398,34 @@ header .mobile {
     height: 60px;
     background: #f1ede3; }
 
-  .hero {
+  .hero .hero-right {
+    width: 96%;
+    margin: 0 2%;
+    padding: 0;
     text-align: center; }
-    .hero .hero-right {
-      width: 96%;
-      margin: 0 2%;
-      padding: 0; }
-    .hero .hero-left {
-      width: 96%;
-      margin: 0 2%; }
-    .hero .hero-right img {
-      display: none; }
-    .hero .hero-right h3 {
-      color: white;
-      font-size: 2em; }
-    .hero .hero-left h3 {
-      display: none; }
-    .hero h1 {
-      display: none; }
+  .hero .hero-left {
+    width: 96%;
+    margin: 0 2%; }
+    .hero .hero-left ul li {
+      padding: 0 2%; }
+  .hero .hero-right img {
+    display: none; }
+  .hero .hero-right h3 {
+    color: white;
+    font-size: 2em; }
+  .hero h1:before {
+    background: none;
+    height: 0;
+    width: 0; }
+
+  .blue-bar .create, .blue-bar .add, .blue-bar .share, .blue-bar .like, .blue-bar .subscribe {
+    width: 40%;
+    padding: 1.5em 5%; }
+  .blue-bar .share {
+    width: 46%;
+    padding: 0 24%; }
+  .blue-bar ul strong {
+    display: inline; }
 
   .submit-recipes ul {
     padding: 0; }
@@ -423,4 +436,7 @@ header .mobile {
   .enter-now button {
     width: 95%;
     border-radius: 5px;
-    padding: 1em 2em; } }
+    padding: 1em 2em; }
+
+  .prizes .prize {
+    width: 100%; } }

@@ -12,7 +12,7 @@
      h1:before {
         width:40px;
         height:100px;
-        background:url('../img/sprite.png') -100px -40px no-repeat;
+        background:url('../img/sprite.png') -100px -37px no-repeat;
     }
     
     h2 {
@@ -21,6 +21,10 @@
     
     h3 {
         font-size: 1.8em;
+    }
+    
+    h4 {
+        font-size: 1.5em;
     }
     
     header {
@@ -36,15 +40,18 @@
     }
     
     .hero {
-        text-align:center;
         .hero-right {
             width: 96%;
             margin: 0 2%;
             padding: 0;
+            text-align:center;
         }
         .hero-left {
             width: 96%;
             margin: 0 2%;
+            ul li {
+                padding: 0 2%;
+            }
         }
         .hero-right img {
             display: none;
@@ -53,11 +60,24 @@
             color: $white;
             font-size: 2em;
         }
-        .hero-left h3 {
-            display: none;
+        h1:before {
+            background: none;
+            height: 0;
+            width: 0;
         }
-        h1 {
-            display: none;
+    }
+    
+    .blue-bar {
+        .create, .add, .share, .like, .subscribe {
+            width: 40%;
+            padding: 1.5em 5%;
+        }
+        .share {
+            width: 46%;
+            padding: 0 24%;
+        }
+        ul strong {
+            display: inline;
         }
     }
     
@@ -77,5 +97,10 @@
             padding: 1em 2em;
             }
         }
+    .prizes {
+        .prize {
+            width: 100%;
+        }
+    }
 }
 
