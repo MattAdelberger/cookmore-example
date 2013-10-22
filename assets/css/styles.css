@@ -136,7 +136,7 @@ header {
   header ul li {
     float: left;
     width: 20%;
-    padding: 2.2em 0 1.6em; }
+    padding: 1.8em 0; }
 
 /*********************************
 *
@@ -151,31 +151,20 @@ header {
   /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-  box-sizing: border-box;
-  color: #0a2852; }
+  box-sizing: border-box; }
   .hero .hero-left {
-    width: 30%;
+    width: 25%;
     float: left; }
-  .hero .hero-left strong {
-    font-weight: bold; }
-  .hero .hero-left ul {
-    margin-top: 2em; }
-  .hero .hero-left ul li {
-    font-size: 1.2em;
-    width: 44%;
-    float: left;
-    padding: 3% 6% 3% 0; }
   .hero .hero-right {
     padding-top: 5em;
-    width: 70%;
+    width: 75%;
     float: left; }
     .hero .hero-right img {
       width: 100%;
       height: auto !important;
       animation: water 20s linear infinite;
       -webkit-animation: water 20s linear infinite;
-      /* Safari and Chrome */
-      transform: rotateX(45deg); }
+      /* Safari and Chrome */ }
     .hero .hero-right h3 {
       text-align: center;
       margin-bottom: 30px; }
@@ -227,50 +216,6 @@ header {
 .blue-bar {
   background: #0a2852;
   color: white; }
-  .blue-bar .create {
-    width: 10%;
-    padding-right: 6%; }
-  .blue-bar .create:before {
-    content: "";
-    float: left;
-    width: 30px;
-    height: 50px;
-    background: url("../img/sprite.png") -20px 0 no-repeat; }
-  .blue-bar .add {
-    width: 15%;
-    padding-right: 6%; }
-  .blue-bar .add:before {
-    content: "";
-    float: left;
-    width: 60px;
-    height: 50px;
-    background: url("../img/sprite.png") -50px 0 no-repeat; }
-  .blue-bar .share {
-    width: 21%;
-    padding-right: 6%; }
-  .blue-bar .share:before {
-    content: "";
-    float: left;
-    width: 60px;
-    height: 50px;
-    background: url("../img/sprite.png") -110px 0 no-repeat; }
-  .blue-bar .like {
-    width: 10%;
-    padding-right: 6%; }
-  .blue-bar .like:before {
-    content: "";
-    float: left;
-    width: 22px;
-    height: 50px;
-    background: url("../img/sprite.png") 0 0 no-repeat; }
-  .blue-bar .subscribe {
-    width: 15%; }
-  .blue-bar .subscribe:before {
-    content: "";
-    float: left;
-    width: 60px;
-    height: 50px;
-    background: url("../img/sprite.png") -170px 0 no-repeat; }
   .blue-bar ul {
     width: 100%; }
   .blue-bar ul strong {
@@ -278,7 +223,14 @@ header {
     font-weight: bold; }
   .blue-bar ul li {
     float: left;
-    padding: 1em 0; }
+    width: 10%;
+    padding: 1em 5%; }
+  .blue-bar ul li.middle {
+    width: 20%; }
+  .blue-bar ul li:first-child {
+    padding-left: 0; }
+  .blue-bar ul li:last-child {
+    padding-right: 0; }
 
 .heroes-at-home {
   background: #e9633a;
@@ -351,7 +303,7 @@ header {
 *  Media Queries
 *
 *********************************/
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   h2 {
     font-size: 2.8em; }
 
