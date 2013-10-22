@@ -99,7 +99,16 @@ p, ul {
   font-size: 1.3em; }
 
 h1 {
-  font-size: 8em; }
+  margin-top: 0.2em;
+  margin-left: 0.5em;
+  font-size: 6em; }
+
+h1:before {
+  content: "";
+  float: left;
+  width: 95px;
+  height: 100px;
+  background: url("../img/sprite.png") 0 -40px no-repeat; }
 
 h2 {
   text-align: center;
@@ -107,7 +116,8 @@ h2 {
   font-size: 3.8em; }
 
 h3 {
-  font-size: 3.5em; }
+  font-size: 3em;
+  margin-bottom: 2em; }
 
 h4 {
   font-size: 2.2em;
@@ -126,17 +136,23 @@ h5 {
 *********************************/
 header {
   background: #f1ede3;
-  text-transform: UPPERCASE;
-  line-height: 1.6em; }
+  text-transform: UPPERCASE; }
+  header h1 {
+    color: #0a2852; }
   header a {
     color: #7c7b78;
     font-size: 1.6em; }
   header a:hover {
     color: #e9633a; }
+  header ul {
+    padding: 0 2em; }
   header ul li {
     float: left;
     width: 20%;
     padding: 2.2em 0 1.6em; }
+
+header .mobile {
+  display: none; }
 
 /*********************************
 *
@@ -154,20 +170,20 @@ header {
   box-sizing: border-box;
   color: #0a2852; }
   .hero .hero-left {
-    width: 30%;
+    width: 40%;
     float: left; }
   .hero .hero-left strong {
     font-weight: bold; }
   .hero .hero-left ul {
-    margin-top: 2em; }
+    margin-left: 2em;
+    margin-bottom: 2em; }
   .hero .hero-left ul li {
     font-size: 1.2em;
-    width: 44%;
-    float: left;
-    padding: 3% 6% 3% 0; }
+    width: 45%;
+    float: left; }
   .hero .hero-right {
     padding-top: 5em;
-    width: 70%;
+    width: 60%;
     float: left; }
     .hero .hero-right img {
       width: 100%;
@@ -228,8 +244,9 @@ header {
   background: #0a2852;
   color: white; }
   .blue-bar .create {
-    width: 10%;
-    padding-right: 6%; }
+    width: 12%;
+    padding-right: 6%;
+    padding-left: 3%; }
   .blue-bar .create:before {
     content: "";
     float: left;
@@ -255,7 +272,7 @@ header {
     height: 50px;
     background: url("../img/sprite.png") -110px 0 no-repeat; }
   .blue-bar .like {
-    width: 10%;
+    width: 8%;
     padding-right: 6%; }
   .blue-bar .like:before {
     content: "";
@@ -308,6 +325,8 @@ header {
     .submit-recipes .recipe img {
       width: 100%;
       height: auto !important; }
+    .submit-recipes .recipe:first-child {
+      margin-left: 1%; }
     .submit-recipes .recipe:last-child {
       margin-right: 0; }
 
@@ -351,15 +370,49 @@ header {
 *  Media Queries
 *
 *********************************/
+@media (max-width: 1140px) {
+  h1 {
+    font-size: 5em; } }
 @media (max-width: 480px) {
+  h1 {
+    font-size: 3em; }
+
+  h1:before {
+    width: 40px;
+    height: 100px;
+    background: url("../img/sprite.png") -100px -40px no-repeat; }
+
   h2 {
     font-size: 2.8em; }
 
+  h3 {
+    font-size: 1.8em; }
+
   header .desktop {
     display: none; }
+  header .mobile {
+    display: block;
+    height: 60px;
+    background: #f1ede3; }
 
-  .hero .hero-right img {
-    display: none; }
+  .hero {
+    text-align: center; }
+    .hero .hero-right {
+      width: 96%;
+      margin: 0 2%;
+      padding: 0; }
+    .hero .hero-left {
+      width: 96%;
+      margin: 0 2%; }
+    .hero .hero-right img {
+      display: none; }
+    .hero .hero-right h3 {
+      color: white;
+      font-size: 2em; }
+    .hero .hero-left h3 {
+      display: none; }
+    .hero h1 {
+      display: none; }
 
   .submit-recipes ul {
     padding: 0; }

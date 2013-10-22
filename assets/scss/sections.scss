@@ -7,7 +7,7 @@
     box-sizing: border-box; 
     color: $blue;
     .hero-left {
-        width: 30%;
+        width: 40%;
         float: left;
     }
     .hero-left {
@@ -15,18 +15,18 @@
             font-weight: bold;
         }
         ul {
-            margin-top: 2em;
+            margin-left: 2em;
+            margin-bottom: 2em;
         }
         ul li {
             font-size: 1.2em;
-            width: 44%;
+            width: 45%;
             float: left;
-            padding: 3% 6% 3% 0;
         }
     }
     .hero-right {
         padding-top: 5em;
-        width: 70%;
+        width: 60%;
         float: left;
         img {
             width: 100%;
@@ -76,8 +76,9 @@
     background: $blue;
     color: $white;
     .create {
-        width: 10%;
+        width: 12%;
         padding-right:6%;
+        padding-left:3%;
     }
     .create:before {
         content:"";
@@ -109,7 +110,7 @@
         background:url('../img/sprite.png') -110px 0 no-repeat;   
     }
     .like {
-        width: 10%;
+        width: 8%;
         padding-right:6%;
     }
     .like:before {
@@ -172,6 +173,9 @@
         img {
             width: 100%;
             height: auto !important;
+        }
+        &:first-child {
+            margin-left: 1%;
         }
         &:last-child {
             margin-right: 0;

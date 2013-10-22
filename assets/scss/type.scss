@@ -7,8 +7,18 @@ p, ul {
 }
 
 h1 {
-    font-size: 8em;
+    margin-top: 0.2em;
+    margin-left: 0.5em;
+    font-size: 6em;
 }
+
+ h1:before {
+        content:"";
+        float:left;
+        width:95px;
+        height:100px;
+        background:url('../img/sprite.png') 0 -40px no-repeat;
+    }
 
 h2 {
     text-align: center;
@@ -17,7 +27,8 @@ h2 {
 }
 
 h3 {
-    font-size: 3.5em;   
+    font-size: 3em;   
+    margin-bottom: 2em;
 }
 
 h4 {

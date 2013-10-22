@@ -1,17 +1,62 @@
+@media (max-width: 1140px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
 @media (max-width: 480px) {
+    
+    h1 {
+        font-size: 3em;
+    }
+     h1:before {
+        width:40px;
+        height:100px;
+        background:url('../img/sprite.png') -100px -40px no-repeat;
+    }
     
     h2 {
         font-size: 2.8em;
+    }
+    
+    h3 {
+        font-size: 1.8em;
     }
     
     header {
         .desktop {
             display: none;
         }
+        
+        .mobile {
+            display: block;
+            height: 60px;
+            background: $medium-tan;
+        }
     }
     
     .hero {
+        text-align:center;
+        .hero-right {
+            width: 96%;
+            margin: 0 2%;
+            padding: 0;
+        }
+        .hero-left {
+            width: 96%;
+            margin: 0 2%;
+        }
         .hero-right img {
+            display: none;
+        }
+        .hero-right h3 {
+            color: $white;
+            font-size: 2em;
+        }
+        .hero-left h3 {
+            display: none;
+        }
+        h1 {
             display: none;
         }
     }
@@ -33,3 +78,4 @@
             }
         }
 }
+

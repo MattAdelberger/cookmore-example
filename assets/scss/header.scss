@@ -1,7 +1,9 @@
 header {
     background: $medium-tan;
+    h1 {
+        color: $blue;
+    }
     text-transform: UPPERCASE;
-    line-height: 1.6em;
     a {
     color: $dark-tan;
         font-size: 1.6em;
@@ -9,9 +11,16 @@ header {
     a:hover {
         color: $orange;
     }
+    ul {
+        padding: 0 2em;
+    }
     ul li {
         float:left;
         width: 20%;
         padding: 2.2em 0 1.6em;
     }
+}
+
+header .mobile {
+    display: none;
 }
