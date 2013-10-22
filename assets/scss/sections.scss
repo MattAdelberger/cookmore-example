@@ -5,19 +5,35 @@
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box; 
+    color: $blue;
     .hero-left {
-        width: 25%;
+        width: 30%;
         float: left;
+    }
+    .hero-left {
+        strong {
+            font-weight: bold;
+        }
+        ul {
+            margin-top: 2em;
+        }
+        ul li {
+            font-size: 1.2em;
+            width: 44%;
+            float: left;
+            padding: 3% 6% 3% 0;
+        }
     }
     .hero-right {
         padding-top: 5em;
-        width: 75%;
+        width: 70%;
         float: left;
         img {
             width: 100%;
             height: auto !important;
             animation: water 20s linear infinite;
             -webkit-animation: water 20s linear infinite; /* Safari and Chrome */
+            transform: rotateX(45deg);
         }
         h3 {
             text-align: center;
@@ -59,6 +75,60 @@
 .blue-bar {
     background: $blue;
     color: $white;
+    .create {
+        width: 10%;
+        padding-right:6%;
+    }
+    .create:before {
+        content:"";
+        float:left;
+        width:30px;
+        height:50px;
+        background:url('../img/sprite.png') -20px 0 no-repeat;  
+    }
+    .add {
+        width: 15%;
+        padding-right:6%;
+    }
+    .add:before {
+        content:"";
+        float:left;
+        width:60px;
+        height:50px;
+        background:url('../img/sprite.png') -50px 0 no-repeat;   
+    }
+    .share {
+        width: 21%;
+        padding-right:6%;
+    }
+    .share:before {
+        content:"";
+        float:left;
+        width:60px;
+        height:50px;
+        background:url('../img/sprite.png') -110px 0 no-repeat;   
+    }
+    .like {
+        width: 10%;
+        padding-right:6%;
+    }
+    .like:before {
+        content:"";
+        float:left;
+        width:22px;
+        height:50px;
+        background:url('../img/sprite.png') 0 0 no-repeat;  
+    }
+    .subscribe {
+        width: 15%;
+    }
+    .subscribe:before {
+        content:"";
+        float:left;
+        width:60px;
+        height:50px;
+        background:url('../img/sprite.png') -170px 0 no-repeat;  
+    }
     ul {
         width:100%;
     }
@@ -68,18 +138,7 @@
     }
     ul li {
         float: left;
-        width: 10%;
-        padding: 1em 5%;
-    }
-    
-    ul li.middle {
-        width:20%;
-    }
-    ul li:first-child {
-        padding-left: 0;
-    }
-    ul li:last-child {
-        padding-right: 0;
+        padding: 1em 0;
     }
 }
 
