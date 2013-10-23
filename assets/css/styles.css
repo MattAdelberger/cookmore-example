@@ -374,30 +374,30 @@ header .mobile {
   h1 {
     font-size: 5em; } }
 @media (max-width: 480px) {
-  h1 {
-    font-size: 3em; }
-
-  h1:before {
-    width: 40px;
-    height: 100px;
-    background: url("../img/sprite.png") -100px -37px no-repeat; }
-
   h2 {
-    font-size: 2.8em; }
+    font-size: 2.2em; }
 
   h3 {
-    font-size: 1.8em; }
+    font-size: 1.4em; }
 
   h4 {
-    font-size: 1.5em; }
+    font-size: 1.2em; }
 
+  header h1 {
+    font-size: 2.6em; }
+  header h1:before {
+    width: 40px;
+    height: 100px;
+    background: url("../img/sprite.png") -100px -40px no-repeat; }
   header .desktop {
     display: none; }
   header .mobile {
     display: block;
-    height: 60px;
+    height: 50px;
     background: #f1ede3; }
 
+  .hero h1, .hero h3 {
+    text-align: Center; }
   .hero .hero-right {
     width: 96%;
     margin: 0 2%;
@@ -422,8 +422,8 @@ header .mobile {
     width: 40%;
     padding: 1.5em 5%; }
   .blue-bar .share {
-    width: 46%;
-    padding: 0 24%; }
+    width: 55%;
+    padding: 0 23%; }
   .blue-bar ul strong {
     display: inline; }
 
