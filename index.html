@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="jPanelMenu">
     
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<meta charset='utf-8' />
         <title>Cookmore | Example</title>
         <link rel="stylesheet" href="assets/css/styles.css">
-        <script src="script.js"></script>
+        <script src='assets/js/jquery-1.7.min.js'></script>
+        <script src="assets/js/jquery-menu.min.js"></script>
+        <script src="assets/js/script.js"></script>
         
         <!--[if lt IE 9]>
             <script src="assets/js/html5shiv.js"></script>
@@ -23,8 +25,18 @@
                 <li><a href="#">My Profile</a></li>
             </ul>
             <div class="mobile">
-                <h1>Cookmore</h1>
-                <h3>By Kenmore</h3>
+                <span class="left">
+                    <h1>Cookmore</h1>
+                    <h3>By Kenmore</h3>
+                </span>
+                <a href="#menu" class="menu-trigger right">Menu</a>
+                <div id="slideMenu">
+                    <ul>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Cookbook</a></li>
+                        <li><a href="#">My Profile</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <section class="hero group">

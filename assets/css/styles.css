@@ -87,6 +87,12 @@ body {
 .group {
   *zoom: 1; }
 
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
 /*********************************
 *
 *  Typography
@@ -164,6 +170,20 @@ header {
 
 header .mobile {
   display: none; }
+  header .mobile .mobile-logo {
+    width: 50%; }
+  header .mobile .menu-trigger {
+    padding: 1em; }
+
+#slideMenu {
+  display: none; }
+
+#jPanelMenu-menu ul li {
+  padding: 0.5em 1em;
+  font-size: 2em;
+  border-bottom: 1px solid #7c7b78; }
+  #jPanelMenu-menu ul li a {
+    color: #7c7b78; }
 
 /*********************************
 *
