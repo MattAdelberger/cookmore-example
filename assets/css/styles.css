@@ -146,9 +146,20 @@ header {
     color: #e9633a; }
   header ul {
     padding: 0 2em; }
+    header ul .logo {
+      font-size: 2em;
+      padding: 0;
+      padding-top: 0.6em;
+      width: 30%; }
+      header ul .logo .orange {
+        color: #e9633a; }
+    header ul .search {
+      width: 25%; }
+      header ul .search input[type="search"] {
+        width: 200px; }
   header ul li {
     float: left;
-    width: 20%;
+    width: 15%;
     padding: 2.2em 0 1.6em; }
 
 header .mobile {
@@ -373,7 +384,7 @@ header .mobile {
 @media (max-width: 1140px) {
   h1 {
     font-size: 5em; } }
-@media (max-width: 480px) {
+@media (max-width: 800px) {
   h2 {
     font-size: 2.2em; }
 

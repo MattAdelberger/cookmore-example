@@ -13,10 +13,25 @@ header {
     }
     ul {
         padding: 0 2em;
+        .logo {
+            font-size: 2em;
+            padding: 0;
+            padding-top: 0.6em;
+            width: 30%;
+            .orange {
+                color: $orange;     
+            }
+        }
+        .search {
+            width:25%;
+           input[type="search"] {
+                width: 200px;
+            } 
+        }
     }
     ul li {
         float:left;
-        width: 20%;
+        width: 15%;
         padding: 2.2em 0 1.6em;
     }
 }
